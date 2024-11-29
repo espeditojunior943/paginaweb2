@@ -1,0 +1,146 @@
+/* Reset de estilo para garantir consistência */
+@import url('reset.css');
+
+/* Variáveis de cor e tipografia */
+:root {
+  --cor-de-fundo: #EBECEE;
+  --branco: #FFFFFF;
+  --laranja: #EB9B00;
+  --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+  --fonte-principal: 'Poppins', sans-serif;
+  --fonte-secundaria: 'Josefin Sans', sans-serif;
+  --azul-escuro: #002F52;
+  --cinza: #474646;
+  --cinza-claro: #858585;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  font-family: var(--fonte-principal);
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: var(--branco);
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--azul-escuro);
+  font-weight: 500;
+}
+
+/* Estilo do Banner */
+.banner {
+  background-color: var(--azul-degrade);
+  color: var(--branco);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.banner h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.banner-search {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+/* Carrosséis */
+.carousel {
+  padding: 50px 20px;
+}
+
+.carousel-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Seção de tópicos recentes */
+.topics {
+  background-color: var(--branco);
+  padding: 50px 20px;
+}
+
+.topics-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.topics-link {
+  font-size: 1.2rem;
+  color: var(--azul-escuro);
+  text-decoration: none;
+  margin: 10px;
+  font-weight: 500;
+}
+
+.topics-link:hover {
+  text-decoration: underline;
+}
+
+/* Rodapé */
+.footer {
+  background-color: var(--branco);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--azul-escuro);
+  font-weight: 500;
+}

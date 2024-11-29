@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="container">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-label">
+        <span class="menu-icon"></span>
+      </label>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Categorias</a></li>
+          <li><a href="#">Programação</a></li>
+          <li><a href="#">Front-end</a></li>
+          <li><a href="#">Infraestrutura</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Design & UX</a></li>
+        </ul>
+      </nav>
+      <img src="img/Logo.svg" alt="Logo AluraBooks" class="logo">
+      <h1 class="title">AluraBooks</h1>
+
+      <div class="user-menu">
+        <a href="#" class="menu-link">
+          <img src="img/Favoritos.svg" alt="Favoritos">
+        </a>
+        <a href="#" class="menu-link">
+          <img src="img/Compras.svg" alt="Carrinho">
+          <p class="text">Minha Sacola</p>
+        </a>
+        <a href="#" class="menu-link">
+          <img src="img/Usuario.svg" alt="Perfil">
+          <p class="text">Meu Perfil</p>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h2 class="banner-title">Já sabe por onde começar?</h2>
+    <p class="banner-text">Encontre o que precisa para seu desenvolvimento!</p>
+    <input type="search" class="banner-search" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <!-- Carrossel de Novos Lançamentos -->
+  <section class="carousel">
+    <h2 class="carousel-title">Novos Lançamentos</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro Apache Kafka"></div>
+        <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro Liderança"></div>
+        <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro Javascript Assertivo"></div>
+        <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia Front-End"></div>
+        <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro Portugol"></div>
+        <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro Acessibilidade"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- Mais vendidos -->
+  <section class="carousel">
+    <h2 class="carousel-title">Mais Vendidos</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro Apache Kafka"></div>
+        <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro Liderança"></div>
+        <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro Javascript Assertivo"></div>
+        <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia Front-End"></div>
+        <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro Portugol"></div>
+        <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro Acessibilidade"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- Tópicos Recentemente Visitados -->
+  <section class="topics">
+    <h2 class="topics-title">Tópicos Visitados Recentemente</h2>
+    <ul class="topics-list">
+      <li><a href="#" class="topics-link">Android</a></li>
+      <li><a href="#" class="topics-link">Marketing Digital</a></li>
+      <li><a href="#" class="topics-link">Agile</a></li>
+      <li><a href="#" class="topics-link">Startups</a></li>
+      <li><a href="#" class="topics-link">HTML & CSS</a></li>
+      <li><a href="#" class="topics-link">Python</a></li>
+    </ul>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact">
+    <h2 class="contact-title">Fique por dentro das novidades!</h2>
+    <p class="contact-text">Atualizações de e-books, novos livros e promoções.</p>
+    <input type="email" class="contact-email" placeholder="Cadastre seu e-mail">
+  </section>
+
+  <footer class="footer">
+    <h2 class="footer-title">Grupo Alura</h2>
+    <ul class="footer-links">
+      <li><a href="#">Caelum</a></li>
+      <li><a href="#">Casa do Código</a></li>
+      <li><a href="#">Alura</a></li>
+      <li><a href="#">Alura para Empresas</a></li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
